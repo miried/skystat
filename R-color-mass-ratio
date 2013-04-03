@@ -1,0 +1,12 @@
+h = hist(ratio,2000,xlim=c(0.05,0.2),probability=TRUE)
+xval= h$mids
+yval = h$density
+
+result = nls( yval ~ a1*dnorm(xval,mean=m1,sd=s1)+a2*dnorm(xval,mean=m2,sd=s2), start=c(a1=0.3,m1=0.09,s1=0.01,a2=0.4,m2=0.13,s2=0.01) )
+lines(xval,predict(result))
+
+
+
+    a1     m1     s1     a2     m2     s2 
+0.4843 0.0907 0.0143 0.4984 0.1266 0.0122 
+

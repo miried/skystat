@@ -1,0 +1,92 @@
+####################################
+# skyplot script
+####################################
+
+
+# pre-work
+####################################
+#ma 2.0
+#mn 30
+#csz 0.025 0.3
+#cn 1000 2
+#s
+####################################
+l
+# all
+####################################
+# get B control group
+dsz 0.025 0.3
+dn 100 2
+wnbd allb100
+wnbe allb100
+wnbf allb100
+## star forming A
+dsf 0 0.1045
+dn 60 2
+wnad allsf50
+wnae allsf50
+wnaf allsf50
+## non star forming A
+dsf 0.1045 0.25
+dn 60 2
+wnad allnsf50
+wnae allnsf50
+wnaf allnsf50
+####################################
+
+# corr < 10
+####################################
+cnn 10
+# get B control group
+dsz 0.025 0.3
+dn 100 2
+wnbd corr10b100
+wnbe corr10b100
+wnbf corr10b100
+# star forming A
+dsf 0 0.1045
+dn 60 2
+wnad corr10sf50
+wnae corr10sf50
+wnaf corr10sf50
+# non star forming A
+dsf 0.1045 0.25
+dn 60 2
+wnad corr10nsf50
+wnae corr10nsf50
+wnaf corr10nsf50
+####################################
+
+l
+# lat > 55
+####################################
+cnl 55
+# get B control group
+dsz 0.025 0.3
+dn 100 2
+wnbd lat55b100
+wnbe lat55b100
+wnbf lat55b100
+# star forming A
+dsf 0 0.1045
+dn 60 2
+wnad lat55sf50
+wnae lat55sf50
+wnaf lat55sf50
+# non star forming A
+dsf 0.1045 0.25
+dn 60 2
+wnad lat55nsf50
+wnae lat55nsf50
+wnaf lat55nsf50
+####################################
+
+# export data
+####################################
+# w
+####################################
+
+
+# everything done
+####################################
+q

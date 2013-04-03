@@ -1,0 +1,11 @@
+Data files:
+================================================================================
+NVSS: RMCatalogue.txt
+--------------------------
+SDSS: SDSS_galaxies.dat
+format: RA, DEC, Z, ABS_PETRO_R_MAG, UBCOL, STELMASS
+--------------------------
+comovingD: comovD.dat
+comoving Distance for SDSS galaxies
+--------------------------
+
